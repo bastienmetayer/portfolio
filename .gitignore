@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+_cv_extract.txt
+# Playwright CLI output (may contain credentials)
+.playwright-cli/
