@@ -425,7 +425,7 @@ body::after {
 
 .about-grid {
   display: grid;
-  grid-template-columns: minmax(0, 68ch) minmax(200px, 240px);
+  grid-template-columns: minmax(0, 68ch);
   gap: var(--gap);
   align-items: start;
 }
@@ -434,37 +434,6 @@ body::after {
   margin: 0 0 1rem;
   font-size: 1.08rem;
   color: var(--ink);
-}
-
-.facts {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  border-top: 1px solid var(--line-soft);
-}
-
-.facts li {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 1rem;
-  padding: 0.85rem 0;
-  border-bottom: 1px solid var(--line-soft);
-}
-
-.facts b {
-  font-family: var(--font-mono), monospace;
-  font-size: 1.6rem;
-  font-weight: 600;
-  color: var(--amber);
-  font-variant-numeric: tabular-nums;
-}
-
-.facts span {
-  font-size: 0.78rem;
-  color: var(--muted);
-  text-align: right;
-  max-width: 14ch;
 }
 
 .filter-pills {
@@ -1086,26 +1055,6 @@ body::after {
   .contact-inner,
   .about-grid {
     grid-template-columns: 1fr;
-  }
-
-  .facts {
-    border-top: none;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 0.6rem;
-  }
-
-  .facts li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.2rem;
-    border: 1px solid var(--line-soft);
-    padding: 0.7rem;
-  }
-
-  .facts span {
-    text-align: left;
-    max-width: none;
   }
 
   .row {

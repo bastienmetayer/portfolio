@@ -1,0 +1,8 @@
+[Unit]
+Description=Déploiement du portfolio (portfolio.sabneit.fr)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=%h/Desktop/Projects/Servers/portfolio/deploy.sh

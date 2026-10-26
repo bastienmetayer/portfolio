@@ -1,11 +1,9 @@
-import { projects, projectsByKind } from "@/lib/projects";
+import { projects } from "@/lib/projects";
 import { techs } from "@/lib/techs";
 import { Reveal } from "@/components/Reveal";
 import { ProjectCatalog } from "@/components/ProjectCatalog";
 
 export default function HomePage() {
-  const proCount = projectsByKind("pro").length;
-
   return (
     <main>
       <section className="hero">
@@ -75,20 +73,6 @@ export default function HomePage() {
               collections, un joueur qui finit un niveau.
             </p>
           </div>
-          <ul className="facts">
-            <li>
-              <b>{projects.length}</b>
-              <span>Projets livrés</span>
-            </li>
-            <li>
-              <b>{proCount}</b>
-              <span>Stages en agence</span>
-            </li>
-            <li>
-              <b>{techs.length}</b>
-              <span>Technos pratiquées</span>
-            </li>
-          </ul>
         </Reveal>
       </section>
 
